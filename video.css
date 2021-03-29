@@ -1,0 +1,82 @@
+/* Video Player */
+.player {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black-color);
+}
+
+.c-video {
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+  overflow: hidden;
+}
+
+.video {
+  width: 100%;
+}
+
+.video:focus {
+  outline: none;
+  border: none;
+}
+
+.c-video:hover .controls {
+  transform: translateY(0);
+}
+
+.controls {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0.5);
+  transform: translateY(100%) translateY(-4px);
+  transition: all 0.2s;
+}
+.buttons {
+  padding: 4px 8px;
+}
+
+.buttons button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.buttons button:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f144";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+.buttons button.play:before {
+  content: "\f144";
+}
+
+.buttons button.pause:before {
+  content: "\f28b";
+}
+
+.orange-bar {
+  height: 5px;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.orange-juice {
+  height: 3px;
+  width: 0;
+  background-color: red;
+}
