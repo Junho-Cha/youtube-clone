@@ -267,3 +267,12 @@ body > .info {
     width: 50%;
   }
 }
+
+body {
+  background-color: black;
+  color: white;
+}
+.upNext .item .moreBtn,
+.info .metadata .titleAndButton .moreBtn {
+  color: white;
+}
